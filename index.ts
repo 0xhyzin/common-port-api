@@ -1,8 +1,10 @@
 import { app } from "./src/app.js";
 import dotenv from 'dotenv';
-export default app;
 
 dotenv.config();
+
+module.exports = app;
+
 const PORT :string =process.env.PORT || "3000";
 
 if (require.main === module) {
