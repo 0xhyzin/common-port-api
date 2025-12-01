@@ -2,7 +2,7 @@ import mysql from 'mysql2/promise';
 
 import dotenv from 'dotenv';
 dotenv.config();
-export const pool =await mysql.createPool({
+export const pool = mysql.createPool({
     port:Number(process.env.AIVEN_PORT),
     host:process.env.AIVEN_HOST!,
     user:process.env.AIVEN_NAME!,
