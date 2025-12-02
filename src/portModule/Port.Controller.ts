@@ -16,7 +16,7 @@ class PortController{
         if(port==null){
             res.status(400).send({message:"Port Not Found",statusCode:400})
         }
-        res.status(200).send(port)
+        res.status(200).send({message:port,statusCode:200})
     }
 }
 export const portController=new PortController();
